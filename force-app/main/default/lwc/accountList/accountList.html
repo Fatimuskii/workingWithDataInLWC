@@ -6,7 +6,10 @@
                 data={accounts.data}
                 columns={columns}
             >
-           </lightning-datatable>
+            </lightning-datatable>
+            <template if:true={errors}>
+                <p>{errors}</p>
+            </template>
         </template>
     </lightning-card>
 </template>
