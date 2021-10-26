@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <template if:true={accounts.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={accounts.data}
+                columns={columns}
+            >
+           </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>
+
+<!--
+    Línea 4 a 9: Definimos el componente base lightning-datatable para utilizar accounts.data y columns que se rellenan en el archivo JavaScript.
+-->
